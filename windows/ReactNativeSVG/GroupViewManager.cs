@@ -16,19 +16,19 @@ namespace ReactNativeSVG
         where TFrameworkElement : Canvas
         where TLayoutShadowNode : SVGShadowNode
     {
-        [ReactProp("width")]
+        [ViewManagerProperty("width")]
         public void SetWidth(Canvas view, double width)
         {
             view.Width = width;
         }
 
-        [ReactProp("height")]
+        [ViewManagerProperty("height")]
         public void SetHeight(Canvas view, double height)
         {
             view.Height = height;
         }
 
-        [ReactProp("stroke", CustomType = "Color", DefaultUInt32 = 0xff000000)]
+        [ViewManagerProperty("stroke", CustomType = "Color", DefaultUInt32 = 0xff000000)]
         public void SetStroke(Canvas view, uint? iColor)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -36,7 +36,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "stroke");
         }
 
-        [ReactProp("strokeWidth", DefaultDouble = 1f)]
+        [ViewManagerProperty("strokeWidth", DefaultDouble = 1f)]
         public void SetStrokeWidth(Canvas view, double thickness)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -44,7 +44,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "strokeWidth");
         }
 
-        [ReactProp("strokeOpacity", DefaultDouble = 1f)]
+        [ViewManagerProperty("strokeOpacity", DefaultDouble = 1f)]
         public void SetStrokeOpacity(Canvas view, double strokeOpacity)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -52,7 +52,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "strokeOpacity");
         }
 
-        [ReactProp("strokeLinecap")]
+        [ViewManagerProperty("strokeLinecap")]
         public void SetStrokeLinecap(Canvas view, string strokeLinecap)
         {
             List<string> strokeLinecapArray = new List<string>() { "butt", "square", "round" };
@@ -62,7 +62,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "strokeLinecap");
         }
 
-        [ReactProp("strokeLinejoin")]
+        [ViewManagerProperty("strokeLinejoin")]
         public void SetStrokeLinejoin(Canvas view, string strokeLinejoin)
         {
             List<string> strokeLinejoinArray = new List<string>() { "miter", "bevel", "round" };
@@ -72,7 +72,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "strokeLinejoin");
         }
 
-        [ReactProp("strokeDasharray")]
+        [ViewManagerProperty("strokeDasharray")]
         public void setStrokeDasharray(Canvas view, JArray strokeDasharray)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -80,7 +80,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "strokeDasharray");
         }
 
-        [ReactProp("strokeDashoffset", DefaultDouble = 0f)]
+        [ViewManagerProperty("strokeDashoffset", DefaultDouble = 0f)]
         public void setStrokeDashoffset(Canvas view, double strokeDashOffset)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -89,7 +89,7 @@ namespace ReactNativeSVG
         }
 
 
-        [ReactProp("strokeMiterlimit", DefaultDouble = 0f)]
+        [ViewManagerProperty("strokeMiterlimit", DefaultDouble = 0f)]
         public void setStrokeMiterlimit(Canvas view, double strokeMiterlimit)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -97,7 +97,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "strokeMiterlimit");
         }
 
-        [ReactProp("fill", CustomType = "Color")]
+        [ViewManagerProperty("fill", CustomType = "Color")]
         public void SetFill(Canvas view, uint? iColor)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -105,7 +105,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "fill");
         }
 
-        [ReactProp("fillOpacity", DefaultDouble = 1f)]
+        [ViewManagerProperty("fillOpacity", DefaultDouble = 1f)]
         public void SetFillOpacity(Canvas view, double fillOpacity)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -113,7 +113,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "fillOpacity");
         }
 
-        [ReactProp("scale", DefaultDouble = 1f)]
+        [ViewManagerProperty("scale", DefaultDouble = 1f)]
         public void SetScale(Canvas view, double scale)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -121,7 +121,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "scale");
         }
 
-        [ReactProp("rotate", DefaultDouble = 0f)]
+        [ViewManagerProperty("rotate", DefaultDouble = 0f)]
         public void SetRotate(Canvas view, double rotate)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -129,7 +129,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "rotate");
         }
 
-        [ReactProp("originX", DefaultDouble = 0f)]
+        [ViewManagerProperty("originX", DefaultDouble = 0f)]
         public void SetOriginX(Canvas view, double originX)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -139,7 +139,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "originX");
         }
 
-        [ReactProp("originY", DefaultDouble = 0f)]
+        [ViewManagerProperty("originY", DefaultDouble = 0f)]
         public void SetOriginY(Canvas view, double originY)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -149,7 +149,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "originY");
         }
 
-        [ReactProp("origin", CustomType = "Point")]
+        [ViewManagerProperty("origin", CustomType = "Point")]
         public void SetOriginY(Canvas view, Point origin)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -157,7 +157,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "origin");
         }
 
-        [ReactProp("x", DefaultDouble = 0f)]
+        [ViewManagerProperty("x", DefaultDouble = 0f)]
         public void SetX(Canvas view, double x)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;
@@ -165,7 +165,7 @@ namespace ReactNativeSVG
             UpdateGroup(view, viewModel, "x");
         }
 
-        [ReactProp("y", DefaultDouble = 0f)]
+        [ViewManagerProperty("y", DefaultDouble = 0f)]
         public void SetY(Canvas view, double y)
         {
             ShapeViewModel viewModel = (ShapeViewModel)view.DataContext;

@@ -26,7 +26,7 @@ namespace ReactNativeSVG
 
         }
 
-        [ReactProp("cx")]
+        [ViewManagerProperty("cx")]
         public void setWidth(Ellipse view, double cx)
         {
             mCX = cx;
@@ -34,21 +34,21 @@ namespace ReactNativeSVG
         }
 
 
-        [ReactProp("cy")]
+        [ViewManagerProperty("cy")]
         public void setHeight(Ellipse view, double cy)
         {
             mCY = cy;
             UpdatePosition(view);
         }
 
-        [ReactProp("rx")]
+        [ViewManagerProperty("rx")]
         public void setRx(Ellipse view, double rx)
         {
             mRX = rx;
             UpdatePosition(view);
         }
 
-        [ReactProp("ry")]
+        [ViewManagerProperty("ry")]
         public void setRy(Ellipse view, double ry)
         {
             mRY = ry;

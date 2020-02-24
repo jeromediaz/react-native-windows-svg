@@ -35,14 +35,14 @@ namespace ReactNativeSVG
             base.SetDimensions(view, dimensions);
         }
 
-        [ReactProp("points")]
+        [ViewManagerProperty("points")]
         public void setWidth(Polygon view, string points)
         {
             PointsParser pp = new PointsParser(points);
             view.Points = pp.getPoints();
         }
 
-        [ReactProp("fillRule")]
+        [ViewManagerProperty("fillRule")]
         public void SetFillRule(Polygon view, string fillRule)
         {
             // view.FillRule = fillRule == 0 ? FillRule.EvenOdd : FillRule.Nonzero;

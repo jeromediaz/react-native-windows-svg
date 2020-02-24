@@ -25,7 +25,7 @@ namespace ReactNativeSVG
 
         }
 
-        [ReactProp("d")]
+        [ViewManagerProperty("d")]
         public void setWidth(Path view, string d)
         {
             PathParser pp = new PathParser(d);

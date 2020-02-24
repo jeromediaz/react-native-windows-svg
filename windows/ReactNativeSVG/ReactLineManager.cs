@@ -25,27 +25,27 @@ namespace ReactNativeSVG
 
         }
 
-        [ReactProp("x1")]
+        [ViewManagerProperty("x1")]
         public void setWidth(Line view, double x1)
         {
             view.X1 = x1;
         }
 
 
-        [ReactProp("y1")]
+        [ViewManagerProperty("y1")]
         public void setHeight(Line view, double y1)
         {
             view.Y1 = y1;
         }
 
 
-        [ReactProp("x2")]
+        [ViewManagerProperty("x2")]
         public void setRx(Line view, double x2)
         {
             view.X2 = x2;
         }
 
-        [ReactProp("y2")]
+        [ViewManagerProperty("y2")]
         public void setRy(Line view, double y2)
         {
             view.Y2 = y2;

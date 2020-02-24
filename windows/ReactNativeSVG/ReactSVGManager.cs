@@ -24,13 +24,13 @@ namespace ReactNativeSVG
             };
         }
 
-        [ReactProp("width")]
+        [ViewManagerProperty("width")]
         public void SetWidth(Canvas view, double width)
         {
             view.Width = width;
         }
 
-        [ReactProp("height")]
+        [ViewManagerProperty("height")]
         public void SetHeight(Canvas view, double height)
         {
             view.Height = height;
@@ -43,7 +43,7 @@ namespace ReactNativeSVG
 
         public override void UpdateExtraData(Canvas root, object extraData)
         {
-            
+
         }
 
         public override void AddView(Canvas parent, DependencyObject child, int index)

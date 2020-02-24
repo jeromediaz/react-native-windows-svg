@@ -7,7 +7,6 @@ namespace ReactNativeSVG
     {
         public void CreatePackage(IReactPackageBuilder packageBuilder)
         {
-            packageBuilder.AddAttributedModules();
             packageBuilder.AddViewManagers();
         }
     }

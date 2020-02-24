@@ -25,7 +25,7 @@ namespace ReactNativeSVG
         private double mCY = 0;
         private double mR = 0;
 
-        [ReactProp("cx")]
+        [ViewManagerProperty("cx")]
         public void setWidth(Ellipse view, double cx)
         {
             mCX = cx;
@@ -33,7 +33,7 @@ namespace ReactNativeSVG
         }
 
 
-        [ReactProp("cy")]
+        [ViewManagerProperty("cy")]
         public void setHeight(Ellipse view, double cy)
         {
             mCY = cy;
@@ -41,7 +41,7 @@ namespace ReactNativeSVG
         }
 
 
-        [ReactProp("r")]
+        [ViewManagerProperty("r")]
         public void setRx(Ellipse view, double r)
         {
             mR = r;

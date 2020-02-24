@@ -27,7 +27,7 @@ namespace ReactNativeSVG
 
         public override void UpdateExtraData(Polyline root, object extraData)
         {
-         
+
         }
 
         public override void SetDimensions(Polyline view, Dimensions dimensions)
@@ -35,14 +35,14 @@ namespace ReactNativeSVG
             base.SetDimensions(view, dimensions);
         }
 
-        [ReactProp("points")]
+        [ViewManagerProperty("points")]
         public void setPoints(Polyline view, string points)
         {
             PointsParser pp = new PointsParser(points);
             view.Points = pp.getPoints();
         }
 
-        [ReactProp("fillRule")]
+        [ViewManagerProperty("fillRule")]
         public void SetFillRule(Polygon view, string fillRule)
         {
             List<string> fillRuleArray = new List<string>() { " evenodd", "nonzero" };
@@ -51,7 +51,7 @@ namespace ReactNativeSVG
 
         protected override Polyline CreateViewInstance(ThemedReactContext reactContext)
         {
-            
+
             return new Polyline()
             {
                 FillRule = FillRule.EvenOdd,
