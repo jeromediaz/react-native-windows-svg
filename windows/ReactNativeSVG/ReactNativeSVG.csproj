@@ -114,6 +114,7 @@
     <Compile Include="ReactEllipseManager.cs" />
     <Compile Include="ReactGroupManager.cs" />
     <Compile Include="ReactLineManager.cs" />
+    <Compile Include="ReactPackageProvider.cs" />
     <Compile Include="ReactPathManager.cs" />
     <Compile Include="ReactPolygonManager.cs" />
     <Compile Include="ReactPolylineManager.cs" />
@@ -128,16 +129,18 @@
     <EmbeddedResource Include="Properties\ReactNativeSVG.rd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\node_modules\react-native-windows\ReactWindows\ReactNative\ReactNative.csproj">
+    <ProjectReference Include="..\..\node_modules\Microsoft.ReactNative\Microsoft.ReactNative.vcxproj">
       <Project>{c7673ad5-e3aa-468c-a5fd-fa38154e205c}</Project>
-      <Name>ReactNative</Name>
+      <Name>Microsoft.ReactNative</Name>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
+  <Import Project="..\..\node_modules\Microsoft.ReactNative.SharedManaged\Microsoft.ReactNative.SharedManaged.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
