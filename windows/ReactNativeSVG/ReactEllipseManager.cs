@@ -1,5 +1,4 @@
-﻿using ReactNative.UIManager;
-using ReactNative.UIManager.Annotations;
+﻿using Microsoft.ReactNative.Managed;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Shapes;

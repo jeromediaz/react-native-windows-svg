@@ -1,11 +1,10 @@
-﻿using ReactNative.UIManager.Annotations;
+﻿using Microsoft.ReactNative.Managed;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Shapes;
-using ReactNative.UIManager;
 using Windows.UI.Xaml.Media;
 
 namespace ReactNativeSVG

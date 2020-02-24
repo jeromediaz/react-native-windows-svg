@@ -1,7 +1,7 @@
 ﻿using System;
-using ReactNative.UIManager;
+using Microsoft.ReactNative.Managed;
 using Windows.UI.Xaml.Controls;
-using ReactNative.UIManager.Annotations;
+
 using Windows.UI.Xaml;
 
 namespace ReactNativeSVG

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using ReactNative.Bridge;
-using ReactNative.UIManager;
+using Microsoft.ReactNative.Managed;
 
 namespace ReactNativeSVG
 {

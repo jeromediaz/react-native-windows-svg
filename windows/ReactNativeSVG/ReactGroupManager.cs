@@ -1,6 +1,5 @@
-﻿using ReactNative.UIManager;
-using Windows.UI.Xaml.Controls;
-using ReactNative.UIManager.Annotations;
+﻿using Windows.UI.Xaml.Controls;
+using Microsoft.ReactNative.Managed;
 using Windows.UI.Xaml;
 using System;
 using Windows.Foundation;

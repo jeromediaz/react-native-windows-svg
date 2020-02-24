@@ -1,5 +1,5 @@
 ﻿using Facebook.Yoga;
-using ReactNative.UIManager;
+using Microsoft.ReactNative.Managed;
 using System;
 using System.Collections.Generic;
 using System.Linq;

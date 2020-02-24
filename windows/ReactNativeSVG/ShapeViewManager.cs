@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json.Linq;
-using ReactNative.UIManager;
-using ReactNative.UIManager.Annotations;
+using Microsoft.ReactNative.Managed;
 using System;
 using System.Collections.Generic;
 using Windows.Foundation;
